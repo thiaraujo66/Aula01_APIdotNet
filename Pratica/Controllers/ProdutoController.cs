@@ -72,6 +72,7 @@ namespace Pratica.Controllers
                 return NotFound();
 
             produtos.Remove(produto);
+
             return NoContent();
         }
     }
