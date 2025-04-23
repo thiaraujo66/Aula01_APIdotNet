@@ -68,6 +68,7 @@ namespace Pratica.Controllers
         public ActionResult Remover(int pId)
         {
             Produto? produto = produtos.FirstOrDefault(p => p.Id == pId);
+
             if (produto == null) 
                 return NotFound();
 
